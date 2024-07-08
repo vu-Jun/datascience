@@ -44,6 +44,7 @@ def test_setup_map():
         'width': 960,
         'height': 500,
         'features': [],
+        'attr': 'Map data © OpenStreetMap contributors'
     }
     """ Tests features as NumPy array. """
     kwargs2 = {
@@ -52,13 +53,15 @@ def test_setup_map():
         'width': 960,
         'height': 500,
         'features': np.array([
-            ds.Marker(51.514, -0.132), 
-            ds.Marker(51.514, -0.139), 
+            ds.Marker(51.514, -0.132),
+            ds.Marker(51.514, -0.139),
             ds.Marker(51.519, -0.132)
         ]),
+        'attr': 'Map data © OpenStreetMap contributors'
     }
     ds.Map(**kwargs1).show()
     ds.Map(**kwargs2).show()
+
 
 
 def test_map_marker_and_region(states):
