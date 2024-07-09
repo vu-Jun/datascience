@@ -5897,6 +5897,13 @@ def _as_labels(column_or_columns):
     else:
         return column_or_columns
 
+f1_branch_coverage = {
+    "branch_1_empty_list": False,
+    "branch_2_not_iterable": False,
+    "branch_3_single_list": False,
+    "branch_4_else": False
+}
+
 def _varargs_labels_as_list(label_list):
     """Return a list of labels for a list of labels or singleton list of list
     of labels."""
@@ -5910,6 +5917,18 @@ def _varargs_labels_as_list(label_list):
     else:
         raise ValueError("Labels {} contain more than list.".format(label_list),
                          "Pass just one list of labels.")
+        
+def print_coverage():
+    total_branches = len(f1_branch_coverage)
+    covered_branches = sum(1 for covered in f1_branch_coverage.values() if covered)
+    coverage_percentage = (covered_branches / total_branches) * 100
+    print(f"Branch Coverage: {coverage_percentage:.2f}% ({covered_branches}/{total_branches} branches covered)")
+    for branch, hit in f1_branch_coverage.items():
+        print(f"{branch} was {'hit' if hit else 'not hit'}")
+        
+def reset_coverage():
+    for key in f1_branch_coverage.keys():
+        f1_branch_coverage[key] = False
 
 def _assert_same(values):
     """Assert that all values are identical and return the unique value."""
