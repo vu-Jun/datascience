@@ -5908,13 +5908,17 @@ def _varargs_labels_as_list(label_list):
     """Return a list of labels for a list of labels or singleton list of list
     of labels."""
     if len(label_list) == 0:
+        f1_branch_coverage["branch_1_empty_list"] = True
         return []
     elif not _util.is_non_string_iterable(label_list[0]):
         # Assume everything is a label.  If not, it'll be caught later.
+        f1_branch_coverage["branch_2_not_iterable"] = True
         return label_list
     elif len(label_list) == 1:
+        f1_branch_coverage["branch_3_single_list"] = True
         return label_list[0]
     else:
+        f1_branch_coverage["branch_4_else"] = True
         raise ValueError("Labels {} contain more than list.".format(label_list),
                          "Pass just one list of labels.")
         
