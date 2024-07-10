@@ -814,9 +814,28 @@ class Circle(Marker):
 
     def draw_on(self, folium_map, radius_in_meters=False):
         if radius_in_meters:
+            f2_branch_coverage["draw_on_radius_true"] = True
             folium.Circle(**self._folium_kwargs).add_to(folium_map)
         else:
+            f2_branch_coverage["draw_on_radius_false"] = True
             folium.CircleMarker(**self._folium_kwargs).add_to(folium_map)
+            
+f2_branch_coverage = {
+    "draw_on_radius_true": False,
+    "draw_on_radius_false": False
+}
+
+def print_coverage():
+    total_branches = len(f2_branch_coverage)
+    covered_branches = sum(1 for covered in f2_branch_coverage.values() if covered)
+    coverage_percentage = (covered_branches / total_branches) * 100
+    print(f"Branch Coverage: {coverage_percentage:.2f}% ({covered_branches}/{total_branches} branches covered)")
+    for branch, hit in f2_branch_coverage.items():
+        print(f"{branch} was {'hit' if hit else 'not hit'}")
+        
+def reset_coverage():
+    for key in f2_branch_coverage.keys():
+        f2_branch_coverage[key] = False
 
 
 class Region(_MapFeature):
