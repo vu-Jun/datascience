@@ -6,7 +6,7 @@
 
 **URL:** https://github.com/data-8/datascience
 
-**Number of lines of code and the tool used to count it:** 5.8 KLOC counted by Lizard.py
+**Number of lines of code and the tool used to count it:** 5.8 KLOC counted by Lizard
 
 **Programming language:** Python
 
@@ -60,9 +60,14 @@ I have used **Coverage.py**, which is an existing tool to measure coverage for p
 
 **Existing tool new coverage result:**  
 
-<img src="sep_image/f1_new_bCoverage_html.png" style="width:600px; height:auto;">
+<img src="sep_image/f1_new_bCoverage_html.png" style="width:600px; height:auto;">  
 
-<"State the coverage improvement with a number and elaborate on why the coverage is improved">  
+As you see the structure of "_varargs_labels_as_list" function, it consists of 4 different branches that cannot be satisfied in one go, thus I have made 4 test cases to satisfy each branch hit at least once and those four cases of 25 percent of coverage adds upto 100 percent branch coverage. By using existing coverage tool, it is shown that it has covered from 69 percent to 100 percent.
+
+- test_varargs_labels_as_list_empty_list ensures the function handles empty input correctly.   
+- test_varargs_labels_as_list_not_iterable verifies that a list of labels is processed as expected.   
+- test_varargs_labels_as_list_single_list checks the function’s behavior when a single list is passed.   
+- test_varargs_labels_as_list_raise_value_error tests the error handling when multiple lists are passed, raising a ValueError.  
 
 
 **<Function 2: circle.draw_on>**
@@ -81,9 +86,12 @@ I have used **Coverage.py**, which is an existing tool to measure coverage for p
 
 **Existing tool new coverage result:**  
 
-<img src="sep_image/f2_new_bCoverage_html.png" style="width:600px; height:auto;">
+<img src="sep_image/f2_new_bCoverage_html.png" style="width:600px; height:auto;">  
 
-<"State the coverage improvement with a number and elaborate on why the coverage is improved">
+Again, it consists of if and else statement, creating two branches to be taken consider of when measuring coverage. Thus, I have created 2 test cases to satisfy each branch at least once and two branch coverage measurement adds up to 100 percent coverage.  
+
+- test_draw_on_radius_in_meters_true checks the behavior when radius_in_meters is set to True, ensuring the branch is executed and the coverage is recorded.   
+- test_draw_on_radius_in_meters_false verifies the function's behavior when radius_in_meters is set to False, ensuring this branch is also covered.  
 
 
 ### Overall
