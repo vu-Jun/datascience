@@ -14,6 +14,20 @@ Programming language: Python
 
 <"Inform the name of the existing tool that was executed and how it was executed">
 
+I have used Coverage.py, which is an existing tool to measure coverage for python projects. 
+
+Step 1: clone git project to the local repository
+Step 2: make sure to install all neccessary modules for projects to run flawlessly
+** pip install coverage **
+** pip install pytest **
+** pip install datascience **
+** pip install -r requirements.txt **
+** pip install -r requirements-tests.txt **
+Step 3: Once all modules are installed, change current directory to the root directory of the project and run coverage by Coverage.py
+** coverage run --branch -m pytest **
+** coverage report **
+** coverage html **
+
 <"Show the coverage results provided by the existing tool with a screenshot">
 
 <img src="sep_image/old_overall_coverage.png" style="width:600px; height:auto;">
@@ -30,7 +44,17 @@ Programming language: Python
 
 <"Provide a screenshot of the old coverage results for such function">
 
+<img src="sep_image/f1_old_bCoverage_html.png" style="width:600px; height:auto;">
+
 <"Provide a screenshot of the new coverage results for such function">
+
+Instrumented result:
+
+<img src="sep_image/f1_branch_coverage.png" style="width:600px; height:auto;">
+
+existing tool coverage result:
+
+<img src="sep_image/f1_new_bCoverage_html.png" style="width:600px; height:auto;">
 
 <"State the coverage improvement with a number and elaborate on why the coverage is improved">
 
@@ -41,7 +65,17 @@ Programming language: Python
 
 <"Provide a screenshot of the old coverage results for such function">
 
+<img src="sep_image/f2_old_bCoverage_html.png" style="width:600px; height:auto;">
+
 <"Provide a screenshot of the new coverage results for such function">
+
+Instrumented result:
+
+<img src="sep_image/f2_branch_coverage.png" style="width:600px; height:auto;">
+
+existing tool coverage result:
+
+<img src="sep_image/f2_new_bCoverage_html.png" style="width:600px; height:auto;">
 
 <"State the coverage improvement with a number and elaborate on why the coverage is improved">
 
