@@ -10,6 +10,8 @@
 
 **Programming language:** Python
 
+---
+
 ## Coverage measurement with existing tool  
 
 I have used **Coverage.py**, which is an existing tool to measure coverage for python projects. 
@@ -18,11 +20,11 @@ I have used **Coverage.py**, which is an existing tool to measure coverage for p
 
 **Step 2: make sure to install all neccessary modules for projects to run flawlessly**   
 
-**pip install coverage**  
-**pip install pytest**  
-**pip install datascience**  
-**pip install -r requirements.txt**  
-**pip install -r requirements-tests.txt**  
+- pip install coverage  
+- pip install pytest  
+- pip install datascience  
+- pip install -r requirements.txt  
+- pip install -r requirements-tests.txt  
 
 **Step 3: Once all modules are installed, change current directory to the root directory of the project and run coverage by Coverage.py**    
 
@@ -38,14 +40,13 @@ I have used **Coverage.py**, which is an existing tool to measure coverage for p
 
 <img src="sep_image/old_overall_coverage.png" style="width:600px; height:auto;">  
 
+---
 
 ## Coverage improvement
 
 ### Individual tests  
 
 **<Function 1: _varargs_labels_as_list>**
-
-<Show a patch (diff) or a link to a commit made in your forked repository that shows the new/enhanced tests for function 1>  
 
 **Creation of test cases commit:** https://github.com/vu-Jun/datascience/commit/52a880444d99e3a2b3866a85a4e38839d2fc1a0d  
 
@@ -66,10 +67,9 @@ I have used **Coverage.py**, which is an existing tool to measure coverage for p
 
 <"State the coverage improvement with a number and elaborate on why the coverage is improved">  
 
+---
 
 **<Function 2: circle.draw_on>**
-
-<Show a patch (diff) or a link to a commit made in your forked repository that shows the new/enhanced tests for function 2>
 
 **Creation of test cases commit:** https://github.com/vu-Jun/datascience/commit/3fde7df62976973049ef9c8b1c57597543d6f48d  
 
@@ -88,6 +88,8 @@ I have used **Coverage.py**, which is an existing tool to measure coverage for p
 <img src="sep_image/f2_new_bCoverage_html.png" style="width:600px; height:auto;">
 
 <"State the coverage improvement with a number and elaborate on why the coverage is improved">
+
+---
 
 ### Overall
 
