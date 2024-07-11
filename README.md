@@ -10,8 +10,6 @@
 
 **Programming language:** Python
 
----
-
 ## Coverage measurement with existing tool  
 
 I have used **Coverage.py**, which is an existing tool to measure coverage for python projects. 
@@ -40,7 +38,6 @@ I have used **Coverage.py**, which is an existing tool to measure coverage for p
 
 <img src="sep_image/old_overall_coverage.png" style="width:600px; height:auto;">  
 
----
 
 ## Coverage improvement
 
@@ -67,7 +64,6 @@ I have used **Coverage.py**, which is an existing tool to measure coverage for p
 
 <"State the coverage improvement with a number and elaborate on why the coverage is improved">  
 
----
 
 **<Function 2: circle.draw_on>**
 
@@ -89,7 +85,6 @@ I have used **Coverage.py**, which is an existing tool to measure coverage for p
 
 <"State the coverage improvement with a number and elaborate on why the coverage is improved">
 
----
 
 ### Overall
 
