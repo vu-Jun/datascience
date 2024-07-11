@@ -6,13 +6,11 @@
 
 **URL:** https://github.com/data-8/datascience
 
-**Number of lines of code and the tool used to count it:** 5.8KLOC counted by Lizard.py
+**Number of lines of code and the tool used to count it:** 5.8 KLOC counted by Lizard.py
 
 **Programming language:** Python
 
-## Coverage measurement with existing tool
-
-<"Inform the name of the existing tool that was executed and how it was executed">
+## Coverage measurement with existing tool  
 
 I have used **Coverage.py**, which is an existing tool to measure coverage for python projects. 
 
@@ -28,43 +26,36 @@ Step 2: make sure to install all neccessary modules for projects to run flawless
 
 Step 3: Once all modules are installed, change current directory to the root directory of the project and run coverage by Coverage.py  
 
-**coverage run --branch -m pytest**  
+**coverage run --branch -m pytest**    
 
 <img src="sep_image/coverage_run.png" style="width:600px; height:auto;">  
 
-**coverage report**
+**coverage report**  
 
 <img src="sep_image/coverage_report.png" style="width:600px; height:auto;">  
 
-**coverage html**
-
-<"Show the coverage results provided by the existing tool with a screenshot">
+**coverage html**  
 
 <img src="sep_image/old_overall_coverage.png" style="width:600px; height:auto;">  
 
+
 ## Coverage improvement
 
-### Individual tests
-
-<The following is supposed to be repeated for each function (2 in total)>
+### Individual tests  
 
 **<Function 1: _varargs_labels_as_list>**
 
-<Show a patch (diff) or a link to a commit made in your forked repository that shows the new/enhanced tests for function 1>
-
-<"Provide a screenshot of the old coverage results for such function">
+<Show a patch (diff) or a link to a commit made in your forked repository that shows the new/enhanced tests for function 1>  
 
 **Existing tool old coverage result:**
 
-<img src="sep_image/f1_old_bCoverage_html.png" style="width:600px; height:auto;">
+<img src="sep_image/f1_old_bCoverage_html.png" style="width:600px; height:auto;">  
 
-<"Provide a screenshot of the new coverage results for such function">
-
-**Instrumented result:**
+**Instrumented result after creating test cases:**  
 
 <img src="sep_image/f1_branch_coverage.png" style="width:600px; height:auto;">
 
-**Existing tool new coverage result:**
+**Existing tool new coverage result:**  
 
 <img src="sep_image/f1_new_bCoverage_html.png" style="width:600px; height:auto;">
 
@@ -75,19 +66,15 @@ Step 3: Once all modules are installed, change current directory to the root dir
 
 <Show a patch (diff) or a link to a commit made in your forked repository that shows the new/enhanced tests for function 2>
 
-<"Provide a screenshot of the old coverage results for such function">
+**Existing tool old coverage result :**  
 
-**Existing tool old coverage result:**
+<img src="sep_image/f2_old_bCoverage_html.png" style="width:600px; height:auto;">  
 
-<img src="sep_image/f2_old_bCoverage_html.png" style="width:600px; height:auto;">
-
-<"Provide a screenshot of the new coverage results for such function">
-
-**Instrumented result:**
+**Instrumented result after creating test cases:**  
 
 <img src="sep_image/f2_branch_coverage.png" style="width:600px; height:auto;">
 
-**Existing tool new coverage result:**
+**Existing tool new coverage result:**  
 
 <img src="sep_image/f2_new_bCoverage_html.png" style="width:600px; height:auto;">
 
